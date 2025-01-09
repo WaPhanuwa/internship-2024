@@ -55,6 +55,12 @@ if __name__ == "__main__":
         # Read image frame
         ret, frame = cap.read()
 
+        font = cv2.FONT_HERSHEY_SIMPLEX 
+
+        cv2.putText(frame,  
+                'Phanuwat Sukkasem + Clicknext-Internship-2024',  
+                (450, 50), font, 1, (0, 255, 255), 2, cv2.LINE_4) 
+
         if ret:
             # Detect motorcycle from image frame
             frame_result = detect_object(frame)
