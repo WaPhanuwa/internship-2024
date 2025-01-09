@@ -54,7 +54,7 @@ if __name__ == "__main__":
     while cap.isOpened():
         # Read image frame
         ret, frame = cap.read()
-
+        # Add your name + Clicknext-Internship-2024
         font = cv2.FONT_HERSHEY_SIMPLEX 
 
         cv2.putText(frame,  
